@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /guide/get-started
+      link: /guide/getting-started
     - theme: alt
-      text: Documentation
-      link: /guide/documentation
+      text: View on GitHub
+      link: https://github.com/abyss-solutions/abyss-3d-viewer
 
 features:
   - title: Feature A
