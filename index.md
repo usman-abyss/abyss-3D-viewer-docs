@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /pages/get-started
+      link: /guide/get-started
     - theme: alt
       text: Documentation
-      link: /pages/documentation
+      link: /guide/documentation
 
 features:
   - title: Feature A

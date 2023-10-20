@@ -5,15 +5,16 @@ export default {
 
   themeConfig: {
     nav: [
-      { text: "Getting Started", link: "/pages/get-started" },
-      { text: "Docs", link: "/pages/documentation" },
+      { text: "Getting Started", link: "/guide/get-started" },
+      { text: "Docs", link: "/guide/documentation" },
     ],
     sidebar: [
       {
         text: "Items",
         items: [
-          { text: "Docs", link: "/pages/documentation" },
-          { text: "Getting Started", link: "/pages/get-started" },
+          { text: "Docs", link: "/guide/documentation" },
+          { text: "Getting Started", link: "/guide/get-started" },
+          { text: "Types", link: "/guide/types" },
         ],
       },
     ],
