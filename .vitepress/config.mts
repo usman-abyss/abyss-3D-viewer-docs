@@ -9,11 +9,17 @@ export default defineConfig({
     nav: [{ text: "Getting Started", link: "/guide/getting-started" }],
     sidebar: [
       {
-        text: "Items",
+        text: "Introduction",
+        collapsed: false,
         items: [
           { text: "What is Abyss 3D Viewer?", link: "/guide/about" },
           { text: "Getting Started", link: "/guide/getting-started" },
         ],
+      },
+      {
+        text: "Documentation",
+        collapsed: false,
+        items: [{ text: "Types", link: "/guide/types" }],
       },
     ],
     footer: {
