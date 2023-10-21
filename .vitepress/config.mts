@@ -21,6 +21,10 @@ export default defineConfig({
         collapsed: false,
         items: [{ text: "Types", link: "/guide/types" }],
       },
+      {
+        text: "Team",
+        link: "/team",
+      },
     ],
     footer: {
       copyright:
