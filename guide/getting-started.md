@@ -11,7 +11,7 @@
   three @types/react @types/react @types/react-dom @types/three
   ```
 
-Learn more about usage up the viewer in [here](guide/usage.md).
+Learn more about usage up the viewer in here.
 
 ### Setup for development
 
