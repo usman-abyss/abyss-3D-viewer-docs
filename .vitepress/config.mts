@@ -16,5 +16,9 @@ export default defineConfig({
         ],
       },
     ],
+    footer: {
+      copyright:
+        "© 2023 Abyss Solutions - all trademarks are the property of their respective owners",
+    },
   },
 });
