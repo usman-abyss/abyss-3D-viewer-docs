@@ -25,7 +25,11 @@ export default defineConfig({
           {
             text: "Components",
             collapsed: true,
-            items: [{ text: "Billboard", link: "/guide/components/billboard" }],
+            items: [
+              { text: "Billboard", link: "/guide/components/billboard" },
+              { text: "Marker", link: "/guide/components/marker" },
+              { text: "SVG Marker", link: "/guide/components/svg-marker" },
+            ],
           },
         ],
       },

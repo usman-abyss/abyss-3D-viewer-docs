@@ -16,14 +16,16 @@ It makes use of a Three.js sprite to display the text. The sprite is always faci
 
 The `Billboard` component accepts the following props:
 
-- `text` (string): The text to be displayed on the label.
-- `color` (string): The color of the text.
-- `backgroundColor` (string): The background color of the label.
-- `fontSize` (number): The font size of the text.
-- `baseWidth` (number): The base width of the label.
-- `position` (THREE.Vector3 parameters): The 3D position where the label should be placed.
-- `fixedSize` (number, optional): An optional fixed size for the label.
-- `clickable` (boolean, optional): A flag to make the label clickable (defaults to `false`).
+| Prop            | Type          | Description                                             |
+| --------------- | ------------- | ------------------------------------------------------- |
+| text            | string        | The text to be displayed on the label.                  |
+| color           | string        | The color of the text.                                  |
+| backgroundColor | string        | The background color of the label.                      |
+| fontSize        | number        | The font size of the text.                              |
+| baseWidth       | number        | The base width of the label.                            |
+| position        | THREE.Vector3 | The 3D position where the label should be placed.       |
+| fixedSize       | number        | An optional fixed size for the label.                   |
+| clickable       | boolean       | A flag to make the label clickable (defaults to false). |
 
 ## Usage
 
