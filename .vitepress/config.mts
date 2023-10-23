@@ -19,7 +19,15 @@ export default defineConfig({
       {
         text: "Documentation",
         collapsed: false,
-        items: [{ text: "Types", link: "/guide/types" }],
+        items: [
+          { text: "Types", link: "/guide/types" },
+          { text: "Utils", link: "/guide/utils" },
+          {
+            text: "Components",
+            collapsed: true,
+            items: [{ text: "Billboard", link: "/guide/components/billboard" }],
+          },
+        ],
       },
       {
         text: "Team",

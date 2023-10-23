@@ -28,14 +28,6 @@ const members = [
 
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/126056846?v=4',
-    name: 'Hamza Sohail',
-    title: 'Docs Contributor',
-    links: [
-      { icon: 'github', link: 'https://github.com/HamzaSohailAbyssSolutions' },
-    ]
-  },
-  {
     avatar: 'https://avatars.githubusercontent.com/u/33480365?v=4',
     name: 'Qian Chen',
     title: 'Docs Contributor',
