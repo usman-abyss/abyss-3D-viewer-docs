@@ -4,7 +4,7 @@
 
 The `onSceneLoaded` prop resets the camera positions to default once the 3D View is rendered.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 onSceneLoaded?: () => void;
@@ -14,7 +14,7 @@ onSceneLoaded?: () => void;
 
 The `onInitialPointCloudLoad` resets the camera position to default.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 onInitialPointCloudLoad?: () => void;
@@ -24,7 +24,7 @@ onInitialPointCloudLoad?: () => void;
 
 The `cameraTarget` controls the camera position, and determines the part of the 3D View to look at.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface CameraTargetProps {
@@ -41,7 +41,7 @@ cameraTarget?: CameraTargetProps;
 
 The `navigationControls` is used to control camera navigation.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface NavigationControlsProps {
@@ -56,9 +56,9 @@ navigationControls?: NavigationControlsProps;
 
 ## visibilityBox
 
-The `visibilityBox` prop 
+The `visibilityBox` prop is used to draw a bounding box.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface VisibilityBoxProps {
@@ -75,7 +75,7 @@ visibilityBox?: VisibilityBoxProps;
 
 The `setVisibilityBox` is used to set visibilityBox state. Visibility box can have three modes - `Disabled, Enabled, Adjusted`.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface VisibilityBoxProps {
@@ -98,7 +98,7 @@ setVisibilityBox?: (newBox: VisibilityBoxProps) => void;
 
 The `transformControls` is used to transform objects in 3D space, but does not transform the scene's camera.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface TransformControlsProps {
@@ -127,7 +127,7 @@ transformControls?: TransformControlsProps;
 
 The `brushTool` prop - if enabled - can be used to select and brush over the selected points.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface BrushToolProps {
@@ -144,7 +144,7 @@ brushTool?: BrushToolProps;
 
 The `models` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface MaterialProps {
@@ -167,9 +167,9 @@ models?: ModelProps[];
 
 ## markers
 
-The `markers` prop 
+The `markers` prop is used to display markers on the 3D Image. The markers can have three shapes - `Sphere, Cylinder, Flag`.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 enum MarkerShapeType {
@@ -202,9 +202,9 @@ markers?: Omit<MarkerProps, 'onMarkerClick'>[];
 
 ## svgMarkers
 
-The `svgMarkers` prop
+The `svgMarkers` prop is used to display point of interest markers on the 3D Image. 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface MarkerLineStyleProps {
@@ -241,7 +241,7 @@ svgMarkers?: SvgMarkerProps[];
 
 The `segments` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 enum SegmentVariants {
@@ -268,7 +268,7 @@ segments?: SegmentProps[];
 
 The `pointCloudMaterials` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface PointCloudMaterialProps {
@@ -295,7 +295,7 @@ pointCloudMaterials?: Map<string, PointCloudMaterialProps>;
 
 The `simplePointClouds` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface Field {
@@ -326,9 +326,9 @@ simplePointClouds?: SimplePointCloudProps[];
 
 ## pointClouds
 
-The `pointClouds` prop 
+The `pointClouds` prop is used to pass the octree point cloud path of the image to render.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface OctreePointCloudProps extends ViewerObjectProps {
@@ -343,9 +343,9 @@ pointClouds?: OctreePointCloudProps[];
 
 ## pointBudget
 
-The `pointBudget` prop 
+The `pointBudget` prop is used to control the number of props loaded and rendered at any given time.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 pointBudget?: number;
@@ -355,7 +355,7 @@ pointBudget?: number;
 
 The `invisiblePointsBudgetRatio` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 invisiblePointsBudgetRatio?: number;
@@ -363,9 +363,9 @@ invisiblePointsBudgetRatio?: number;
 
 ## showPointCloudsInSphericalView
 
-The `showPointCloudsInSphericalView` prop 
+The `showPointCloudsInSphericalView` prop is used to show/hide point clouds when a user navigates to image view from 3D View.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 showPointCloudsInSphericalView?: boolean;
@@ -373,9 +373,9 @@ showPointCloudsInSphericalView?: boolean;
 
 ## sphericalImageSets
 
-The `sphericalImageSets` prop 
+The `sphericalImageSets` prop is used to render given sphericals on the 3D View.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface SphericalImageProps extends ViewerObjectProps {
@@ -408,7 +408,7 @@ sphericalImageSets?: SphericalImageSetProps[];
 
 The `sphericalImageSetsFromUrl` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface SphericalImageSetFromUrlExtendedProps
@@ -431,9 +431,11 @@ sphericalImageSetsFromUrl?: SphericalImageSetFromUrlProps[];
 
 ## viewCube
 
-The `viewCube` prop
+The `viewCube` prop is used to manage the cube and compass on the screen. The compass depicts the direction of the 3D View.
 
-**Type Definition**
+![View Cube](/assets/viewcube.png)
+
+**Prop Definition**
 
 ```typescript
 interface ViewCubeCompassProps {
@@ -461,7 +463,7 @@ viewCube?: ViewCubeProps | boolean;
 
 The `floorLevels` prop is used to draw floor grids on the 3D scans, and label each floor. 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface FloorLevelStyle {
@@ -486,7 +488,7 @@ floorLevels?: FloorLevelProps[];
 
 The `measurementLines` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface MeasurementLineStyle {
@@ -509,7 +511,7 @@ measurementLines?: MeasurementLinesProps;
 
 The `northRotation` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 northRotation?: number;
@@ -519,7 +521,7 @@ northRotation?: number;
 
 The `selectionColors` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 selectionColors?: { shiftKeyColor: number; altKeyColor: number };
@@ -529,7 +531,7 @@ selectionColors?: { shiftKeyColor: number; altKeyColor: number };
 
 The `sphericalViewerImageOpacity` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 sphericalViewerImageOpacity?: number;
@@ -539,7 +541,7 @@ sphericalViewerImageOpacity?: number;
 
 The `sphereRadius` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 sphereRadius?: number;
@@ -547,9 +549,9 @@ sphereRadius?: number;
 
 ## sphericalImageVisibilityRange
 
-The `sphericalImageVisibilityRange` prop
+The `sphericalImageVisibilityRange` prop is used to increase the range of the visibility box to show surrounding area of the image as well.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 sphericalImageVisibilityRange?: Parameters<THREE.Vector3['set']>;
@@ -559,7 +561,7 @@ sphericalImageVisibilityRange?: Parameters<THREE.Vector3['set']>;
 
 The `pointLights` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface PointLightProps {
@@ -574,7 +576,7 @@ pointLights?: PointLightProps[];
 
 The `ambientLightIntensity` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 ambientLightIntensity?: number;
@@ -584,7 +586,7 @@ ambientLightIntensity?: number;
 
 The `fileLoaderOptions` prop resets the camera positions to default once the 3D View is rendered.
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 fileLoaderOptions?: { withCredentials: boolean };
@@ -594,7 +596,7 @@ fileLoaderOptions?: { withCredentials: boolean };
 
 The `polygons` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface PolygonStyleSpec {
@@ -620,7 +622,7 @@ polygons?: PolygonProps[];
 
 The `onAnnotationClick` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 onAnnotationClick?: (annotationId: string) => void;
@@ -630,7 +632,7 @@ onAnnotationClick?: (annotationId: string) => void;
 
 The `onMeshClick` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface PointCoordinates {
@@ -646,7 +648,7 @@ onMeshClick?: (point: PointCoordinates) => void;
 
 The `onPointCloudClick` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface PointPickResult {
@@ -665,7 +667,7 @@ onPointCloudClick?: (pointPickResult: PointPickResult) => void;
 
 The `onPointCloudSelection` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface PointPickResult {
@@ -684,7 +686,7 @@ onPointCloudSelection?: (pointPickResults: PointPickResult[]) => void;
 
 The `onSphericalViewChanged` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface SphericalImageProps extends ViewerObjectProps {
@@ -706,7 +708,7 @@ onSphericalViewChanged?: (sphericalImage: SphericalImageProps | undefined) => vo
 
 The `onSphericalViewClick` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface TextureCoordinates {
@@ -729,7 +731,7 @@ onSphericalViewClick?: (event: SphericalImageViewerClickEvent) => void;
 
 The `currentSpherical` prop
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 interface SphericalImageAnchorStyle {
@@ -765,7 +767,7 @@ currentSpherical?: SphericalImageProps;
 
 The `pickCanvasAreaPercent` prop 
 
-**Type Definition**
+**Prop Definition**
 
 ```typescript
 pickCanvasAreaPercent?: number;
