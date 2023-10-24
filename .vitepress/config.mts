@@ -21,6 +21,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "Types", link: "/guide/types" },
+          { text: "Props", link: "/guide/props" },
           { text: "Utils", link: "/guide/utils" },
           {
             text: "Components",
