@@ -49,6 +49,10 @@ export default defineConfig({
         text: "Team",
         link: "/team",
       },
+      {
+        text: "Data Pipeline",
+        link: "/guide/data-pipeline",
+      },
     ],
     footer: {
       copyright:
