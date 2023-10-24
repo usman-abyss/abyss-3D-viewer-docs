@@ -30,11 +30,12 @@ export default defineConfig({
               { text: "Billboard", link: "/guide/components/billboard" },
               { text: "Marker", link: "/guide/components/marker" },
               { text: "SVG Marker", link: "/guide/components/svg-marker" },
+              { text: "Wireframe", link: "/guide/components/wireframe" },
             ],
           },
           {
             text: "Core",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "PointsAttributeBuffer",
