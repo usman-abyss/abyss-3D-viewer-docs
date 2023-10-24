@@ -1,4 +1,4 @@
-# Utulity Functions
+# Utility Functions
 
 ## `computeBoundingBox`
 

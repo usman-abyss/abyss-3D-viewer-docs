@@ -31,6 +31,16 @@ export default defineConfig({
               { text: "SVG Marker", link: "/guide/components/svg-marker" },
             ],
           },
+          {
+            text: "Core",
+            collapsed: false,
+            items: [
+              {
+                text: "PointsAttributeBuffer",
+                link: "/guide/core/PointsAttributeBuffer",
+              },
+            ],
+          },
         ],
       },
       {
