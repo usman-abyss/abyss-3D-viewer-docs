@@ -29,6 +29,7 @@ export default defineConfig({
             items: [
               { text: "Billboard", link: "/guide/components/billboard" },
               { text: "Marker", link: "/guide/components/marker" },
+              { text: "Model", link: "/guide/components/model" },
               { text: "SVG Marker", link: "/guide/components/svg-marker" },
               { text: "Wireframe", link: "/guide/components/wireframe" },
             ],
@@ -57,6 +58,9 @@ export default defineConfig({
     footer: {
       copyright:
         "© 2023 Abyss Solutions - all trademarks are the property of their respective owners",
+    },
+    lastUpdated: {
+      text: "Last Updated",
     },
   },
 });
