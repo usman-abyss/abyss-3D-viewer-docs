@@ -142,7 +142,7 @@ brushTool?: BrushToolProps;
 
 ## models
 
-The `models` prop 
+The `models` prop is used to render a 3D model on the screen.
 
 **Prop Definition**
 
@@ -167,7 +167,7 @@ models?: ModelProps[];
 
 ## markers
 
-The `markers` prop is used to display markers on the 3D Image. The markers can have three shapes - `Sphere, Cylinder, Flag`.
+The `markers` prop is used to display markers on the 3D Image. These markers can be used to identify the camera locations, point of interests, etc.
 
 **Prop Definition**
 
@@ -373,7 +373,7 @@ showPointCloudsInSphericalView?: boolean;
 
 ## sphericalImageSets
 
-The `sphericalImageSets` prop is used to render given sphericals on the 3D View.
+The `sphericalImageSets` prop is used to rpass a list of spherical locations to be rendered on the screen.
 
 **Prop Definition**
 
