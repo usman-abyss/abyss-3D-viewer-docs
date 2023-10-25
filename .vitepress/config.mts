@@ -51,7 +51,7 @@ export default defineConfig({
       },
       {
         text: "Data Pipeline",
-        link: "/guide/data-pipeline",
+        link: "/guide/data-format-supported",
       },
     ],
     footer: {
