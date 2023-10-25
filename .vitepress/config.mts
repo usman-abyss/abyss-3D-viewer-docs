@@ -42,6 +42,10 @@ export default defineConfig({
                 text: "PointsAttributeBuffer",
                 link: "/guide/core/PointsAttributeBuffer",
               },
+              {
+                text: "BinPointsLoader",
+                link: "/guide/core/BinPointsLoader",
+              },
             ],
           },
         ],
