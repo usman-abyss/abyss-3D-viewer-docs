@@ -219,7 +219,7 @@ interface SphericalImageProps extends ViewerObjectProps {
 ### SphericalImageSetExtendedProps
 
 [SphericalImageProps](#sphericalimageprops)  
-[SphericalImageSetProps](props.md#sphericalimagesets)
+[SphericalImageSetProps](/guide/props.md#sphericalimagesets)
 
 ```typescript
 interface SphericalImageSetExtendedProps extends SphericalImageSetProps {
