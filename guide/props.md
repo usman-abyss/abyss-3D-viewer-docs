@@ -41,6 +41,9 @@ cameraTarget?: CameraTargetProps;
 
 The `navigationControls` is used to control camera navigation.
 
+**Types**  
+[LookAroundControlsProps](/guide/types/props-types.md#lookaroundcontrolsprops)
+
 **Prop Definition**
 
 ```typescript
@@ -56,7 +59,10 @@ navigationControls?: NavigationControlsProps;
 
 ## visibilityBox
 
-The `visibilityBox` prop is used to draw a bounding box.
+The `visibilityBox` prop is used to draw a bounding box. Visibility box can have three modes - `Disabled, Enabled, Adjusted`.
+
+**Types**  
+[VisibilityBoxMode](/guide/types/props-types.md#visibilityboxmode)
 
 **Prop Definition**
 
@@ -73,30 +79,24 @@ visibilityBox?: VisibilityBoxProps;
 
 ## setVisibilityBox
 
-The `setVisibilityBox` is used to set visibilityBox state. Visibility box can have three modes - `Disabled, Enabled, Adjusted`.
+The `setVisibilityBox` is used to set visibilityBox state.
+
+**Types**  
+[VisibilityBoxProps](#visibilitybox)
 
 **Prop Definition**
 
 ```typescript
-interface VisibilityBoxProps {
-  mode: VisibilityBoxMode;
-  min: [x: number, y: number, z: number];
-  max: [x: number, y: number, z: number];
-  step: [x: number, y: number, z: number];
-};
-
-enum VisibilityBoxMode {
-  Disabled,
-  Enabled,
-  Adjusting,
-};
-
 setVisibilityBox?: (newBox: VisibilityBoxProps) => void;
 ```
 
 ## transformControls
 
 The `transformControls` is used to transform objects in 3D space, but does not transform the scene's camera.
+
+**Types**  
+[TransformMode](/guide/types/props-types.md#transformmode)  
+[TransformSpace](/guide/types/props-types.md#transformspace)
 
 **Prop Definition**
 
@@ -107,18 +107,7 @@ interface TransformControlsProps {
   space: TransformSpace;
   size: number;
   target: string;
-};
-
-enum TransformMode {
-  Translate,
-  Rotate,
-  Scale,
-};
-
-enum TransformSpace {
-  Local,
-  World,
-};
+}
 
 transformControls?: TransformControlsProps;
 ```
@@ -126,6 +115,9 @@ transformControls?: TransformControlsProps;
 ## brushTool
 
 The `brushTool` prop - if enabled - can be used to select and brush over the selected points.
+
+**Types**  
+[BrushingEvent](/guide/types/props-types.md#brushingevent)
 
 **Prop Definition**
 
@@ -139,21 +131,17 @@ interface BrushToolProps {
 brushTool?: BrushToolProps;
 ```
 
-
 ## models
 
-The `models` prop is used to render a 3D model on the screen.
+The `models` prop
+
+**Types**  
+[MaterialProps](/guide/types/props-types.md#materialprops)  
+[ViewerObjectProps](#viewerobjectprops)
 
 **Prop Definition**
 
 ```typescript
-interface MaterialProps {
-  color?: string;
-  transparent?: boolean;
-  opacity?: number;
-  side?: Side;
-};
-
 interface ModelProps extends ViewerObjectProps {
   url: string;
   position?: Parameters<THREE.Vector3['set']>;
@@ -167,23 +155,16 @@ models?: ModelProps[];
 
 ## markers
 
-The `markers` prop is used to display markers on the 3D Image. These markers can be used to identify the camera locations, point of interests, etc.
+The `markers` prop is used to display markers on the 3D Image. The markers can have three shapes - `Sphere, Cylinder, Flag`.
+
+**Types**  
+[BillboardProps](/guide/components/billboard.md#props)  
+[MarkerShapeType](/guide/types/props-types.md#markershapetype)  
+[MarkerShapeStyle](/guide/types/props-types.md#markershapestyle)
 
 **Prop Definition**
 
 ```typescript
-enum MarkerShapeType {
-  SPHERE = 0,
-  CYLINDER = 1,
-  FLAG = 2,
-};
-
-interface MarkerShapeStyle {
-  color: string | THREE.Color;
-  opacity: number;
-  size: number;
-};
-
 interface MarkerProps {
   id: string;
   text?: string;
@@ -202,24 +183,15 @@ markers?: Omit<MarkerProps, 'onMarkerClick'>[];
 
 ## svgMarkers
 
-The `svgMarkers` prop is used to display point of interest markers on the 3D Image. 
+The `svgMarkers` prop is used to display point of interest markers on the 3D Image.
+
+**Types**  
+[MarkerLineStyleProps](/guide/types/props-types.md#markerlinestyleprops)  
+[MarkerSphereStyleProps](/guide/types/props-types.md#markerspherestyleprops)
 
 **Prop Definition**
 
 ```typescript
-interface MarkerLineStyleProps {
-  color: number | string | THREE.Color;
-  lineWidth: number;
-  dashed: boolean;
-};
-
-interface MarkerSphereStyleProps {
-  color: number | string | THREE.Color;
-  opacity?: number;
-  size?: number;
-  emissiveIntensity?: number;
-};
-
 interface SvgMarkerProps {
   position: Parameters<THREE.Vector3['set']>;
   rotation?: Parameters<THREE.Euler['set']>;
@@ -239,17 +211,15 @@ svgMarkers?: SvgMarkerProps[];
 
 ## segments
 
-The `segments` prop 
+The `segments` prop
+
+**Types**  
+[BoundingBox](/guide/types/utils-types.md#boundingbox)  
+[SegmentVariants](/guide/types/props-types.md#segmentvariants)
 
 **Prop Definition**
 
 ```typescript
-enum SegmentVariants {
-  LinesAndWireframeMesh,
-  LinesAndTransparentMesh,
-  LinesOnly,
-};
-
 interface SegmentProps extends ViewerObjectProps {
   lineColor: number;
   lineWidth: number;
@@ -266,7 +236,9 @@ segments?: SegmentProps[];
 
 ## pointCloudMaterials
 
-The `pointCloudMaterials` prop 
+The `pointCloudMaterials` prop
+
+> **Note:** How to show ColorMap type?
 
 **Prop Definition**
 
@@ -293,24 +265,14 @@ pointCloudMaterials?: Map<string, PointCloudMaterialProps>;
 
 ## simplePointClouds
 
-The `simplePointClouds` prop 
+The `simplePointClouds` prop
+
+**Types**  
+[DataFormat](/guide/types/props-types.md#dataformat)
 
 **Prop Definition**
 
 ```typescript
-interface Field {
-  name: string;
-  type?: string;
-  offset: number;
-  size?: number;
-  maxId?: number;
-};
-
-interface DataFormat {
-  recordSize: number;
-  fields: Field[];
-};
-
 interface SimplePointCloudProps extends ViewerObjectProps {
   url: string;
   requestHeader?: { [header: string]: string };
@@ -327,6 +289,9 @@ simplePointClouds?: SimplePointCloudProps[];
 ## pointClouds
 
 The `pointClouds` prop is used to pass the octree point cloud path of the image to render.
+
+**Types**  
+[ViewerObjectProps](/guide/types/props-types.md#viewerobjectprops)
 
 **Prop Definition**
 
@@ -353,7 +318,7 @@ pointBudget?: number;
 
 ## invisiblePointsBudgetRatio
 
-The `invisiblePointsBudgetRatio` prop 
+The `invisiblePointsBudgetRatio` prop
 
 **Prop Definition**
 
@@ -373,30 +338,16 @@ showPointCloudsInSphericalView?: boolean;
 
 ## sphericalImageSets
 
-The `sphericalImageSets` prop is used to rpass a list of spherical locations to be rendered on the screen.
+The `sphericalImageSets` prop is used to render given sphericals on the 3D View.
+
+**Types**  
+[SphericalImageProps](/guide/types/props-types.md#sphericalimagesets)  
+[SphericalImageAnchorStyles](/guide/types/props-types.md#sphericalimageanchorstyles)  
+[ViewerObjectProps](/guide/types/props-types.md#viewerobjectprops)
 
 **Prop Definition**
 
 ```typescript
-interface SphericalImageProps extends ViewerObjectProps {
-  url: string;
-  name: string;
-  requestHeader?: { [header: string]: string };
-  position: Parameters<THREE.Vector3['set']>;
-  rotation: Parameters<THREE.Vector3['set']>;
-  imageYawOffset?: number;
-  lookAt?: Point3d;
-  fov?: number;
-  style?: SphericalImageAnchorStyles;
-};
-
-interface SphericalImageAnchorStyles {
-  normal?: SphericalImageAnchorStyle;
-  highlighted?: SphericalImageAnchorStyle;
-  viewModeNormal?: SphericalImageAnchorStyle;
-  viewModeHighlighted?: SphericalImageAnchorStyle;
-};
-
 interface SphericalImageSetProps extends ViewerObjectProps {
   sphericalImages: SphericalImageProps[];
   styles?: SphericalImageAnchorStyles;
@@ -406,17 +357,14 @@ sphericalImageSets?: SphericalImageSetProps[];
 
 ## sphericalImageSetsFromUrl
 
-The `sphericalImageSetsFromUrl` prop 
+The `sphericalImageSetsFromUrl` prop
+
+**Types**  
+[SphericalImageSetFromUrlExtendedProps](/guide/types/props-types.md#sphericalimagesetfromurlextendedprops)
 
 **Prop Definition**
 
 ```typescript
-interface SphericalImageSetFromUrlExtendedProps
-  extends Omit<SphericalImageSetExtendedProps, 'sphericalImages'> {
-  url: string;
-  requestHeader?: { [header: string]: string };
-}
-
 interface SphericalImageSetFromUrlProps
   extends Omit<
     SphericalImageSetFromUrlExtendedProps,
@@ -435,14 +383,12 @@ The `viewCube` prop is used to manage the cube and compass on the screen. The co
 
 ![View Cube](/assets/viewcube.png)
 
+**Types**  
+[ViewCubeCompassProps](/guide/types/props-types.md#viewcubecompassprops)
+
 **Prop Definition**
 
 ```typescript
-interface ViewCubeCompassProps {
-  ringColor: string;
-  letterStyle: { color: string; fontSize: number; strokeColor: string; strokeWidth: number };
-};
-
 interface ViewCubeProps {
   cubeSize: number;
   fontSize: number;
@@ -461,17 +407,15 @@ viewCube?: ViewCubeProps | boolean;
 
 ## floorLevels
 
-The `floorLevels` prop is used to draw floor grids on the 3D scans, and label each floor. 
+The `floorLevels` prop is used to draw floor grids on the 3D scans, and label each floor.
+
+**Types**  
+[TextLabelProps](/guide/types/props-types.md#textlabelprops)  
+[FloorLevelStyle](/guide/types/props-types.md#floorlevelstyle)
 
 **Prop Definition**
 
 ```typescript
-interface FloorLevelStyle {
-  color: number;
-  opacity: number;
-  lineWidth: number;
-};
-
 interface FloorLevelProps extends ViewerObjectProps {
   label?: Omit<TextLabelProps, 'position' | 'text'>;
   style: FloorLevelStyle;
@@ -486,23 +430,20 @@ floorLevels?: FloorLevelProps[];
 
 ## measurementLines
 
-The `measurementLines` prop 
+The `measurementLines` prop
+
+**Types**  
+[ViewerObjectProps](/guide/types/props-types.md#viewerobjectprops)  
+[MeasurementLineStyle](/guide/types/props-types.md#measurementlinestyle)
 
 **Prop Definition**
 
 ```typescript
-interface MeasurementLineStyle {
-  color: number;
-  opacity: number;
-  lineWidth: number;
-  lineCap?: 'butt' | 'round' | 'square';
-  lineJoin?: 'round' | 'bevel' | 'miter';
-}
-
 interface MeasurementLinesProps extends ViewerObjectProps {
   points?: THREE.Vector3[];
-  style
-};
+  styles?: MeasurementLineStyle;
+  setLineDistance?: (distance: number) => void;
+}
 
 measurementLines?: MeasurementLinesProps;
 ```
@@ -596,19 +537,15 @@ fileLoaderOptions?: { withCredentials: boolean };
 
 The `polygons` prop
 
+**Types:**  
+[ViewerObjectProps](/guide/types/props-types.md#viewerobjectprops)  
+[PolygonStyleSpec](/guide/types/props-types.md#polygonstylespec)  
+[Point3d](/guide/types/utils-types.md#point3d)  
+[PolygonClickEvent](/guide/types/props-types.md#polygonclickevent)
+
 **Prop Definition**
 
 ```typescript
-interface PolygonStyleSpec {
-  normal?: PolygonStyleDetail;
-  highlighted?: PolygonStyleDetail;
-};
-
-type PolygonClickEvent = {
-  centerPoint: Point3d;
-  polygonCoordinates: Point3d[];
-};
-
 interface PolygonProps extends ViewerObjectProps {
   styles?: PolygonStyleSpec;
   borderPoints: Point3d[];
@@ -648,18 +585,12 @@ onMeshClick?: (point: PointCoordinates) => void;
 
 The `onPointCloudClick` prop
 
+**Types**  
+[PointPickResult](/guide/types/props-types.md#pointpickresult)
+
 **Prop Definition**
 
 ```typescript
-interface PointPickResult {
-  pointIndex: number;
-  getPointAttributes: (
-    pointIndex: number,
-    attributeNames: string[]
-  ) => Map<string, number | number[]>;
-  mouseEvent: PointerEvent | MouseEvent;
-};
-
 onPointCloudClick?: (pointPickResult: PointPickResult) => void;
 ```
 
@@ -667,18 +598,12 @@ onPointCloudClick?: (pointPickResult: PointPickResult) => void;
 
 The `onPointCloudSelection` prop
 
+**Types**  
+[PointPickResult](/guide/types/props-types.md#pointpickresult)
+
 **Prop Definition**
 
 ```typescript
-interface PointPickResult {
-  pointIndex: number;
-  getPointAttributes: (
-    pointIndex: number,
-    attributeNames: string[]
-  ) => Map<string, number | number[]>;
-  mouseEvent: PointerEvent | MouseEvent;
-};
-
 onPointCloudSelection?: (pointPickResults: PointPickResult[]) => void;
 ```
 
@@ -686,39 +611,25 @@ onPointCloudSelection?: (pointPickResults: PointPickResult[]) => void;
 
 The `onSphericalViewChanged` prop
 
+**Types**  
+[SphericalImageProps](/guide/types/props-types.md#sphericalimageprops)
+
 **Prop Definition**
 
 ```typescript
-interface SphericalImageProps extends ViewerObjectProps {
-  url: string;
-  name: string;
-  requestHeader?: { [header: string]: string };
-  position: Parameters<THREE.Vector3['set']>;
-  rotation: Parameters<THREE.Vector3['set']>;
-  imageYawOffset?: number;
-  lookAt?: Point3d;
-  fov?: number;
-  style?: SphericalImageAnchorStyles;
-};
-
 onSphericalViewChanged?: (sphericalImage: SphericalImageProps | undefined) => void;
 ```
 
 ## onSphericalViewClick
 
-The `onSphericalViewClick` prop
+The `onSphericalViewClick` prop sets the clicked spherical as the currentSpherical.
+
+**Types**  
+[TextureCoordinates](/guide/types/props-types.md#texturecoordinates)
 
 **Prop Definition**
 
 ```typescript
-interface TextureCoordinates {
-  //  x and y should always be between 0 and 1, and represent the percentage of the width, resp.
-  //  height, of the point where the image was clicked (so called because the image is being used as a
-  //  texture on a sphere).
-  x: number;
-  y: number;
-};
-
 type SphericalImageViewerClickEvent = {
   textureCoordinates: TextureCoordinates;
   worldCoordinates: { x: number; y: number; z: number };
@@ -729,43 +640,20 @@ onSphericalViewClick?: (event: SphericalImageViewerClickEvent) => void;
 
 ## currentSpherical
 
-The `currentSpherical` prop
+The `currentSpherical` prop is used to show the selected spherical image from the sphericalImageSets in 3D view.
+
+**Types**  
+[SphericalImageProps](/guide/types/props-types.md#sphericalimageprops)
 
 **Prop Definition**
 
 ```typescript
-interface SphericalImageAnchorStyle {
-  color: THREE.Color;
-  opacity: number;
-  size: number;
-  emissiveIntensity: number;
-}
-
-interface SphericalImageAnchorStyles {
-  normal?: SphericalImageAnchorStyle;
-  highlighted?: SphericalImageAnchorStyle;
-  viewModeNormal?: SphericalImageAnchorStyle;
-  viewModeHighlighted?: SphericalImageAnchorStyle;
-};
-
-interface SphericalImageProps extends ViewerObjectProps {
-  url: string;
-  name: string;
-  requestHeader?: { [header: string]: string };
-  position: Parameters<THREE.Vector3['set']>;
-  rotation: Parameters<THREE.Vector3['set']>;
-  imageYawOffset?: number;
-  lookAt?: Point3d;
-  fov?: number;
-  style?: SphericalImageAnchorStyles;
-};
-
 currentSpherical?: SphericalImageProps;
 ```
 
 ## pickCanvasAreaPercent
 
-The `pickCanvasAreaPercent` prop 
+The `pickCanvasAreaPercent` prop
 
 **Prop Definition**
 
