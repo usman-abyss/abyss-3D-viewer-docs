@@ -55,7 +55,7 @@ export default defineConfig({
         link: "/team",
       },
       {
-        text: "Data Pipeline",
+        text: "3D models supported",
         link: "/guide/data-format-supported",
       },
     ],
