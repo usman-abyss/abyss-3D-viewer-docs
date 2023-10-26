@@ -200,7 +200,7 @@ interface SphericalImageAnchorStyles {
 
 [ViwewrObjectProps](#viewerobjectprops)  
 [SphericalImageAnchorStyles](#sphericalimageanchorstyles)  
-[Point3d](/guide/types/props-types.md#point3d)
+[Point3d](/guide/types/utils-types.md#point3d)
 
 ```typescript
 interface SphericalImageProps extends ViewerObjectProps {
@@ -320,7 +320,7 @@ interface PolygonStyleSpec {
 
 ### PolygonClickEvent
 
-[Point3d](/guide/types/props-types.md#point3d)
+[Point3d](/guide/types/utils-types.md#point3d)
 
 ```typescript
 type PolygonClickEvent = {

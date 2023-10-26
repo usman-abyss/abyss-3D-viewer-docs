@@ -59,7 +59,7 @@ navigationControls?: NavigationControlsProps;
 
 ## visibilityBox
 
-The `visibilityBox` prop is used to draw a bounding box. Visibility box can have three modes - `Disabled, Enabled, Adjusted`.
+The `visibilityBox` prop is used to draw a bounding box.
 
 **Types**  
 [VisibilityBoxMode](/guide/types/props-types.md#visibilityboxmode)
@@ -79,7 +79,7 @@ visibilityBox?: VisibilityBoxProps;
 
 ## setVisibilityBox
 
-The `setVisibilityBox` is used to set visibilityBox state.
+The `setVisibilityBox` is used to set visibilityBox state. Visibility box can have three modes - `Disabled, Enabled, Adjusted`.
 
 **Types**  
 [VisibilityBoxProps](#visibilitybox)
@@ -133,7 +133,7 @@ brushTool?: BrushToolProps;
 
 ## models
 
-The `models` prop
+The `models` prop is used to render a 3D model on the screen.
 
 **Types**  
 [MaterialProps](/guide/types/props-types.md#materialprops)  
@@ -155,7 +155,7 @@ models?: ModelProps[];
 
 ## markers
 
-The `markers` prop is used to display markers on the 3D Image. The markers can have three shapes - `Sphere, Cylinder, Flag`.
+The `markers` prop is used to display markers on the 3D Image. These markers can be used to identify the camera locations, point of interests, etc.
 
 **Types**  
 [BillboardProps](/guide/components/billboard.md#props)  
@@ -237,8 +237,6 @@ segments?: SegmentProps[];
 ## pointCloudMaterials
 
 The `pointCloudMaterials` prop
-
-> **Note:** How to show ColorMap type?
 
 **Prop Definition**
 
@@ -338,7 +336,7 @@ showPointCloudsInSphericalView?: boolean;
 
 ## sphericalImageSets
 
-The `sphericalImageSets` prop is used to render given sphericals on the 3D View.
+The `sphericalImageSets` prop is used to rpass a list of spherical locations to be rendered on the screen.
 
 **Types**  
 [SphericalImageProps](/guide/types/props-types.md#sphericalimagesets)  
