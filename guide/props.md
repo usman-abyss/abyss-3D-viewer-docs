@@ -448,7 +448,7 @@ measurementLines?: MeasurementLinesProps;
 
 ## northRotation
 
-The `northRotation` prop
+The `northRotation` prop is used to set the camera view and the view cube to the north direction.
 
 **Prop Definition**
 
@@ -458,7 +458,7 @@ northRotation?: number;
 
 ## selectionColors
 
-The `selectionColors` prop
+The `selectionColors` prop is used to set the colors of the selected points when the shift or alt key is pressed.
 
 **Prop Definition**
 
@@ -468,7 +468,7 @@ selectionColors?: { shiftKeyColor: number; altKeyColor: number };
 
 ## sphericalViewerImageOpacity
 
-The `sphericalViewerImageOpacity` prop
+The `sphericalViewerImageOpacity` prop is used to set the opacity of the layer of the spherical image in the mesh material. The default value is 1.
 
 **Prop Definition**
 
@@ -478,7 +478,7 @@ sphericalViewerImageOpacity?: number;
 
 ## sphereRadius
 
-The `sphereRadius` prop
+The `sphereRadius` prop is used to set the radius of the sphere in the 3D View on which the spherical images are rendered. The default value is 10.
 
 **Prop Definition**
 
@@ -498,7 +498,7 @@ sphericalImageVisibilityRange?: Parameters<THREE.Vector3['set']>;
 
 ## pointLights
 
-The `pointLights` prop
+The `pointLights` prop is used to set the position and intensity of the point lights in the scene.
 
 **Prop Definition**
 
@@ -513,7 +513,7 @@ pointLights?: PointLightProps[];
 
 ## ambientLightIntensity
 
-The `ambientLightIntensity` prop
+The `ambientLightIntensity` prop is used to set the intensity of the ambient light in the scene.
 
 **Prop Definition**
 
@@ -523,7 +523,7 @@ ambientLightIntensity?: number;
 
 ## fileLoaderOptions
 
-The `fileLoaderOptions` prop resets the camera positions to default once the 3D View is rendered.
+The `fileLoaderOptions` prop
 
 **Prop Definition**
 
@@ -533,7 +533,7 @@ fileLoaderOptions?: { withCredentials: boolean };
 
 ## polygons
 
-The `polygons` prop
+The `polygons` prop are shapes that are drawn on the 3D View. These shapes can be used to identify locations of the ponis of interest, etc.
 
 **Types:**  
 [ViewerObjectProps](/guide/types/props-types.md#viewerobjectprops)  
@@ -581,7 +581,7 @@ onMeshClick?: (point: PointCoordinates) => void;
 
 ## onPointCloudClick
 
-The `onPointCloudClick` prop
+The `onPointCloudClick` prop handles the click on the point cloud.
 
 **Types**  
 [PointPickResult](/guide/types/props-types.md#pointpickresult)
@@ -594,7 +594,7 @@ onPointCloudClick?: (pointPickResult: PointPickResult) => void;
 
 ## onPointCloudSelection
 
-The `onPointCloudSelection` prop
+The `onPointCloudSelection` prop sets the clicked point cloud in onPointCloudClick as selected.
 
 **Types**  
 [PointPickResult](/guide/types/props-types.md#pointpickresult)
@@ -607,7 +607,7 @@ onPointCloudSelection?: (pointPickResults: PointPickResult[]) => void;
 
 ## onSphericalViewChanged
 
-The `onSphericalViewChanged` prop
+The `onSphericalViewChanged` prop set the selected spherical image as the currentSpherical or sets it to undefined when Esc key is pressed.
 
 **Types**  
 [SphericalImageProps](/guide/types/props-types.md#sphericalimageprops)
@@ -620,7 +620,7 @@ onSphericalViewChanged?: (sphericalImage: SphericalImageProps | undefined) => vo
 
 ## onSphericalViewClick
 
-The `onSphericalViewClick` prop sets the clicked spherical as the currentSpherical.
+The `onSphericalViewClick` prop sets the clicked spherical textures and coordiantes of the currentSpherical.
 
 **Types**  
 [TextureCoordinates](/guide/types/props-types.md#texturecoordinates)
@@ -649,9 +649,9 @@ The `currentSpherical` prop is used to show the selected spherical image from th
 currentSpherical?: SphericalImageProps;
 ```
 
-## pickCanvasAreaPercent
+## pickCanvasAreaPercent (need to double check)
 
-The `pickCanvasAreaPercent` prop
+The `pickCanvasAreaPercent` prop is used to set the area of the canvas in percentage. The default value is 5.
 
 **Prop Definition**
 
