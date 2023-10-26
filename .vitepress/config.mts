@@ -48,15 +48,14 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: "3D models supported", link: "/guide/data-format-supported",
+          },
         ],
       },
       {
         text: "Team",
         link: "/team",
-      },
-      {
-        text: "3D models supported",
-        link: "/guide/data-format-supported",
       },
     ],
     footer: {
