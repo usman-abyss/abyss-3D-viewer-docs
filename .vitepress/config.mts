@@ -53,7 +53,12 @@ export default defineConfig({
             ],
           },
           {
-            text: "3D models supported", link: "/guide/data-format-supported",
+            text: "Data",
+            collapsed: true,
+            items: [
+              { text: "3D File Formats", link: "/guide/data/3d-file-formats" },
+              { text: "Octree Parsing", link: "/guide/data/octree-parsing" },
+            ],
           },
         ],
       },
