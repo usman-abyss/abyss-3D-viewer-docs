@@ -46,6 +46,10 @@ export default defineConfig({
                 text: "BinPointsLoader",
                 link: "/guide/core/BinPointsLoader",
               },
+              {
+                text: "OctreePointCloudMasterImpl",
+                link: "/guide/core/OctreePointCloudMasterImpl",
+              },
             ],
           },
           {
