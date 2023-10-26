@@ -36,4 +36,4 @@ In conclusion, the preparation, encoding, and consumption of binary point cloud 
 
 ## Bin file structure
 
-The encoded bin files are not saved as one big chunk but rather strategically split into smaller, more manageable chunks. Learn more about how the the bin files are split into a heirarchy of chunks [here](./bin-file-structure.md).
+The encoded bin files are not saved as one big chunk but rather strategically split into smaller, more manageable chunks. Learn more about how the the bin files are split into a heirarchy of chunks [here](./octree-heirarchy.md).
