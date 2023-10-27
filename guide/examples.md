@@ -55,11 +55,6 @@
             <td bgcolor='red'>No</td>
         </tr>
         <tr>
-            <td>Asset labelling QC</td>
-            <td>spherical_images.json</td>
-            <td bgcolor='red'>No</td>
-        </tr>
-        <tr>
             <td>Simple Point Cloud with Spherical Images</td>
             <td>153X_050_xyz_rgb_id1_id2.bin</td>
             <td>Yes</td>
