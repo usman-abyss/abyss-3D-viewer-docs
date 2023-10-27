@@ -4,7 +4,7 @@ export default defineConfig({
   lang: "en-US",
   title: "Abyss 3D Viewer",
   description: "Vite & Vue powered static site generator.",
-  head: [['link', { rel: 'icon', href: '/public/favicon.ico' }]],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
 
   themeConfig: {
     nav: [{ text: "Getting Started", link: "/guide/getting-started" }],
@@ -35,11 +35,10 @@ export default defineConfig({
           },
           { text: "Utils", link: "/guide/utils" },
           { text: "Hooks", link: "/guide/hooks" },
-          { text: "Helpers",
+          {
+            text: "Helpers",
             collapsed: true,
-            items: [ 
-              { text: 'ColorMap', link: "/guide/helpers/colormap"},
-            ] 
+            items: [{ text: "ColorMap", link: "/guide/helpers/colormap" }],
           },
           {
             text: "Components",
