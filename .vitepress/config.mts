@@ -35,7 +35,12 @@ export default defineConfig({
           },
           { text: "Utils", link: "/guide/utils" },
           { text: "Hooks", link: "/guide/hooks" },
-          { text: "Helpers", link: "/guide/helpers" },
+          { text: "Helpers",
+            collapsed: true,
+            items: [ 
+              { text: 'ColorMap', link: "/guide/helpers/colormap"},
+            ] 
+          },
           {
             text: "Components",
             collapsed: true,
