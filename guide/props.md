@@ -1,5 +1,7 @@
 # Props
 
+The Abyss 3D Viewer has been designed to visualize and interact with 3D Data of varying formats. It therefore accepts a number of props to cater to a wide range of use cases. All of the props listed below are optional and have been provided to provide flexibility to users of this library. 
+
 ## onSceneLoaded
 
 The `onSceneLoaded` prop resets the camera positions to default once the 3D View is rendered.
