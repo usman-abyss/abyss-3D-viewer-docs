@@ -21,6 +21,11 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
+            text: "Examples",
+            collapsed: true,
+            link: "/guide/examples",
+          },
+          {
             text: "Types",
             collapsed: true,
             items: [
