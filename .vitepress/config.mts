@@ -26,6 +26,7 @@ export default defineConfig({
             link: '/guide/props'
           },
           { text: "Utils", link: "/guide/utils" },
+          {text: 'Hooks', link: '/guide/hooks'},
           {
             text: "Components",
             collapsed: true,
