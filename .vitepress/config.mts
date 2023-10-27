@@ -46,7 +46,7 @@ export default defineConfig({
           },
           {
             text: "Core",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "PointsAttributeBuffer",
