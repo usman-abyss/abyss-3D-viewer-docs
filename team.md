@@ -15,7 +15,7 @@ const members = [
     name: 'Saqib Suleman',
     title: 'Docs Contributor',
     links: [
-      { icon: 'github', link: 'https://github.com/saqib-abyss' },
+      { icon: 'github', link: 'https://github.com/saqib-suleman' },
     ]
   },
   {
