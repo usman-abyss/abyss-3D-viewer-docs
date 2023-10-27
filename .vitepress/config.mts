@@ -20,13 +20,20 @@ export default defineConfig({
         text: "Documentation",
         collapsed: false,
         items: [
-          { text: "Types", collapsed: true, items: [{text: 'Utils', link: '/guide/types/utils-types'}, {text: 'Props', link: '/guide/types/props-types'}] },
-          { 
-            text: "Props", 
-            link: '/guide/props'
+          {
+            text: "Types",
+            collapsed: true,
+            items: [
+              { text: "Utils", link: "/guide/types/utils-types" },
+              { text: "Props", link: "/guide/types/props-types" },
+            ],
+          },
+          {
+            text: "Props",
+            link: "/guide/props",
           },
           { text: "Utils", link: "/guide/utils" },
-          {text: 'Hooks', link: '/guide/hooks'},
+          { text: "Hooks", link: "/guide/hooks" },
           {
             text: "Components",
             collapsed: true,
@@ -34,6 +41,8 @@ export default defineConfig({
               { text: "Billboard", link: "/guide/components/billboard" },
               { text: "Marker", link: "/guide/components/marker" },
               { text: "SVG Marker", link: "/guide/components/svg-marker" },
+              { text: "Model", link: "/guide/components/model" },
+              { text: "Wireframe", link: "/guide/components/wireframe" },
             ],
           },
           {
@@ -43,6 +52,25 @@ export default defineConfig({
               {
                 text: "PointsAttributeBuffer",
                 link: "/guide/core/PointsAttributeBuffer",
+              },
+              {
+                text: "BinPointsLoader",
+                link: "/guide/core/BinPointsLoader",
+              },
+              {
+                text: "OctreePointCloudMasterImpl",
+                link: "/guide/core/OctreePointCloudMasterImpl",
+              },
+            ],
+          },
+          {
+            text: "Data",
+            collapsed: true,
+            items: [
+              { text: "Bin file format", link: "/guide/data/bin-file-format" },
+              {
+                text: "Octree heirarchy",
+                link: "/guide/data/octree-heirarchy",
               },
             ],
           },
