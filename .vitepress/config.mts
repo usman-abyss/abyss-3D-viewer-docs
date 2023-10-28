@@ -8,8 +8,8 @@ export default defineConfig({
 
   themeConfig: {
     logo: {
-      dark: "logo_dark.png",
-      light: "logo_light.png",
+      dark: "/logo_dark.png",
+      light: "/logo_light.png",
       alt: "Abyss logo",
     },
     nav: [{ text: "Getting Started", link: "/guide/getting-started" }],
