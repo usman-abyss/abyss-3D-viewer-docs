@@ -14,10 +14,10 @@ hero:
       link: https://github.com/abyss-solutions/abyss-3d-viewer
 
 features:
-  - title: Visualize 3D Data
-    details: Rendering 3D Data is as simple as including Abyss 3D Viewer as a library to your projects.
-  - title: Interactive 3D Environment
-    details: Ability to interact with 3D Data by clicking on a point and performing further operations.
-  - title: Mark areas of interest
-    details: 3D Viewer provides the ability to drop in a marker to highlight any area of interest, e.g. a location.
+  - title: Large Scale Point Cloud Visualization
+    details: Easily and effeciently visualize large scale point clouds in the browser.
+  - title: Fully Configurable
+    details: Configure any part of the viewer, by changing it's props
+  - title: Full Typescript Support
+    details: Abyss 3D Viewer is written in Typescript, and has full support for it.
 ---

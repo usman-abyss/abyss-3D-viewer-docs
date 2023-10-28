@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   lang: "en-US",
-  title: "Abyss 3D Viewer",
+  title: "3D Viewer",
   description: "Documentation for the Abyss 3D Viewer",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
 
