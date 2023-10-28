@@ -78,7 +78,7 @@ export default defineConfig({
             text: "Data",
             collapsed: true,
             items: [
-              { text: "Bin file format", link: "/guide/data/bin-file-format" },
+              { text: "Data Pipeline", link: "/guide/data/data-pipeline" },
               {
                 text: "Octree heirarchy",
                 link: "/guide/data/octree-heirarchy",
