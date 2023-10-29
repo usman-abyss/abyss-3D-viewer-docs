@@ -2,6 +2,8 @@
 
 ## Add Abyss 3D Viewer to your project
 
+### Installation
+
 - Install Node.js v16.17.0 (nvm recommended)
 - Install Yarn
 - ```bash
@@ -9,7 +11,19 @@
   three @types/react @types/react @types/react-dom @types/three
   ```
 
-Learn more about usage up the viewer in here.
+### Component Usage
+
+Import and use the AbyssViewer component in your React components
+
+```tsx
+import { AbyssViewer } from "@abyss/3d-viewer";
+
+<AbyssViewer {...props} />;
+```
+
+### Props Setup
+
+Abyss 3D Viewer provides a lot of props to customize the viewer. You can learn more about the props in the [Props](/guide/props.md) section.
 
 ## Setup for development
 
