@@ -49,8 +49,13 @@ export default defineConfig({
             items: [
               { text: "Billboard", link: "/guide/components/billboard" },
               { text: "Marker", link: "/guide/components/marker" },
-              { text: "SVG Marker", link: "/guide/components/svg-marker" },
+              {
+                text: "Measurement Lines",
+                link: "/guide/components/measurement-lines",
+              },
               { text: "Model", link: "/guide/components/model" },
+              { text: "Polygon", link: "/guide/components/polygon" },
+              { text: "SVG Marker", link: "/guide/components/svg-marker" },
               { text: "Wireframe", link: "/guide/components/wireframe" },
             ],
           },
