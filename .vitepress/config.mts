@@ -27,6 +27,10 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
+            text: "Props",
+            link: "/guide/props",
+          },
+          {
             text: "Types",
             collapsed: true,
             items: [
@@ -34,12 +38,6 @@ export default defineConfig({
               { text: "Props", link: "/guide/types/props-types" },
             ],
           },
-          {
-            text: "Props",
-            link: "/guide/props",
-          },
-          { text: "Utils", link: "/guide/utils" },
-          { text: "Hooks", link: "/guide/hooks" },
           {
             text: "Helpers",
             collapsed: true,
@@ -75,6 +73,16 @@ export default defineConfig({
             ],
           },
           {
+            text: "Camera",
+            collapsed: true,
+            items: [
+              {
+                text: "Look Around Controls",
+                link: "/guide/camera/look-around-controls",
+              },
+            ],
+          },
+          {
             text: "Data",
             collapsed: true,
             items: [
@@ -85,6 +93,8 @@ export default defineConfig({
               },
             ],
           },
+          { text: "Utils", link: "/guide/utils" },
+          { text: "Hooks", link: "/guide/hooks" },
         ],
       },
       {
