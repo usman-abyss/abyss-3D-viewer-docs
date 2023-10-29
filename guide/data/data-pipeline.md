@@ -8,15 +8,14 @@ The Data Pipeline is a data processing pipeline designed to prepare 3D point clo
 
 The input data for the Data Pipeline consists of 3D point cloud information in the following CSV format:
 
-```csv
-x,y,z,r,g,b
-0.00,1.00,2.00,255,0,0
-0.00,1.00,2.00,245,245,245
-0.00,1.00,2.00,0,0,255
-0.00,1.00,2.00,0,255,0
-0.00,1.00,2.00,255,255,0
-0.00,1.00,2.00,255,0,255
-```
+| x    | y    | z    | r   | g   | b   |
+| ---- | ---- | ---- | --- | --- | --- |
+| 0.00 | 1.00 | 2.00 | 255 | 0   | 0   |
+| 0.00 | 1.00 | 2.00 | 245 | 245 | 245 |
+| 0.00 | 1.00 | 2.00 | 0   | 0   | 255 |
+| 0.00 | 1.00 | 2.00 | 0   | 255 | 0   |
+| 0.00 | 1.00 | 2.00 | 255 | 255 | 0   |
+| 0.00 | 1.00 | 2.00 | 255 | 0   | 255 |
 
 The CSV file contains the following columns:
 
