@@ -1,6 +1,6 @@
 # Props
 
-The Abyss 3D Viewer has been designed to visualize and interact with 3D Data of varying formats. It therefore accepts a number of props to cater to a wide range of use cases. All of the props listed below are optional and have been provided to provide flexibility to users of this library. 
+The Abyss 3D Viewer accepts a number of props to cater to a wide range of use cases. Following is a list of all the props that can be passed to the Abyss 3D Viewer component.
 
 ## onSceneLoaded
 
@@ -308,7 +308,7 @@ pointClouds?: OctreePointCloudProps[];
 
 ## pointBudget
 
-The `pointBudget` prop is used to control the number of props loaded and rendered at any given time.
+The `pointBudget` prop is used to control the number of points to be rendered in the 3D View at a time.
 
 **Prop Definition**
 
