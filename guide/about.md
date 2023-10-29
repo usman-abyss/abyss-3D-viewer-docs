@@ -2,6 +2,10 @@
 
 Welcome to the official documentation page for Abyss 3D Viewer – your gateway to immersive, large-scale 3D point cloud data visualization. Whether you're a developer seeking to harness the power of 3D in your applications or an analyst looking to dive deep into vast data sets, Abyss 3D Viewer is here to transform your experience.
 
+![abyss fabric](/assets/oil-rig-point-cloud.png)
+
+_A large oil rig visualized using Abyss 3D Viewer(zoomed out)._
+
 ## Introduction
 
 Abyss 3D Viewer is a versatile and powerful 3D point cloud data visualizer library crafted using a potent stack of technologies: Three.js, React, and TypeScript. This library goes beyond the conventional 3D mesh rendering, focusing on its primary strength – the ability to load and display extensive quantities of point cloud data with remarkable efficiency and precision.
