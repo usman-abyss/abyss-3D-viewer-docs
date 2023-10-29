@@ -80,6 +80,14 @@ export default defineConfig({
                 text: "Look Around Controls",
                 link: "/guide/camera/look-around-controls",
               },
+              {
+                text: "Navigation Controls",
+                link: "/guide/camera/navigation-controls",
+              },
+              {
+                text: "Camera Mover",
+                link: "/guide/camera/camera-mover",
+              },
             ],
           },
           {
