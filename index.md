@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Abyss 3D Viewer"
-  tagline: "Scaling New Heights in Points Clouds!"
+  tagline: "Scaling New Heights in Point Clouds!"
   actions:
     - theme: brand
       text: Get started
